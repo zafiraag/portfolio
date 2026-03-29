@@ -8,7 +8,7 @@ const WorksSection = ({ posts }) => {
         <div className="bg-back-subtle p-2 mr-4 rounded-full">
           <PencilIcon />
         </div>
-        <h4 className="text-xl text-accent font-semibold">Posts</h4>
+        <h4 className="text-xl text-accent font-semibold">Certificates</h4>
       </span>
       <PostList allPosts={posts} postType="posts" home={true} />
     </section>

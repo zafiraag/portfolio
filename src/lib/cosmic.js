@@ -130,3 +130,7 @@ export async function getSiteSettings() {
     throw error
   }
 }
+
+export function getAllWorks(draft, type = 'works', limit = 3) {
+  return getAllPosts(draft, type, limit)
+}

@@ -10,20 +10,8 @@ const PostHeader = ({ post }) => {
     <PostTitle>{post.title}</PostTitle>
     <div className="flex items-center mb-8">
       <div className="flex items-center relative">
-        <Image
-          src={avatar}
-          width={42}
-          height={42}
-          alt="Stefan Kudla"
-          className="rounded-full"
-          placeholder="blur"
-          style={{
-            maxWidth: "100%",
-            height: "auto"
-          }} />
         <span className="ml-2 text-sm">
-          Stefan Kudla |{' '}
-          <Date dateString={post.created_at} formatStyle="LLLL dd, yyyy" /> |{' '}
+          <Date dateString={post.created_at} formatStyle="LLLL dd, yyyy" />
           {post.metadata.category.title}
         </span>
       </div>
@@ -34,15 +22,15 @@ const PostHeader = ({ post }) => {
     />
     <div className="flex flex-row justify-between sm:items-center pb-8 border-b">
       <div className="sm:flex items-center gap-x-2">
-        {post.metadata.live_url ? (
+        {post.metadata.url ? (
           <>
             <a
-              href={post.metadata.live_url}
+              href={post.metadata.url}
               target="_blank"
               rel="noreferrer"
               className="flex items-center text-accent hover:text-gray-500 text-sm md:ml-4 w-fit"
             >
-              Live Site
+                URL
               <span>
                 <ExternalLinkIcon />
               </span>

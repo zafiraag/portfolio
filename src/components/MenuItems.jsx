@@ -8,17 +8,17 @@ export const routes = [
     label: 'Home',
   },
   {
-    path: '/posts',
-    label: 'Posts',
+    path: '/about',
+    label: 'About',
   },
   {
     path: '/works',
     label: 'Works',
   },
   {
-    path: '/about',
-    label: 'About',
-  },
+    path: '/posts',
+    label: 'Certificates',
+  }
 ]
 
 const MenuItems = () => {

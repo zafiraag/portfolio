@@ -1,6 +1,6 @@
-import { EmailIcon, GithubIcon, LinkedinIcon, PaperIcon } from '@/configs/icons'
+import { EmailIcon, PhoneIcon, InstagramIcon, LinkedinIcon, PaperIcon } from '@/configs/icons'
 
-const Socials = ({ resume, email, github, linkedin }) => {
+const Socials = ({ resume, email, instagram, linkedin, phone }) => {
   return (
     <div className="flex items-center">
       <a
@@ -24,12 +24,12 @@ const Socials = ({ resume, email, github, linkedin }) => {
           <EmailIcon />
         </a>
         <a
-          href={`https://github.com/${github}`}
+          href={`https://instagram.com/${instagram}`}
           className="group cursor-pointer"
-          aria-label="Github"
-          title="Github"
+          aria-label="Instagram"
+          title="Instagram"
         >
-          <GithubIcon />
+          <InstagramIcon />
         </a>
         <a
           href={`https://www.linkedin.com/in/${linkedin}`}
@@ -38,6 +38,14 @@ const Socials = ({ resume, email, github, linkedin }) => {
           title="Linkedin"
         >
           <LinkedinIcon />
+        </a>
+        <a
+          href={`tel:${phone}`}
+          className="group cursor-pointer"
+          aria-label="Phone"
+          title="Phone"
+        >
+          <PhoneIcon />
         </a>
       </span>
     </div>

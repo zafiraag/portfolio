@@ -34,7 +34,7 @@ const PostList = ({ allPosts, postType, home }) => {
                 )}
               </h3>
               <p className="text-fore-subtle mb-3 lg:mb-0 lg:pr-6">
-                {post.metadata.excerpt}
+                {post?.metadata?.excerpt ?? ""}
               </p>
             </div>
             {home ? (

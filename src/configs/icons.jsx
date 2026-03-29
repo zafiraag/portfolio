@@ -153,7 +153,7 @@ export const SpotifyIcon = () => {
 
 // Social Icons
 
-export const GithubIcon = () => {
+export const InstagramIcon = () => {
   return (
     <svg
       stroke="currentColor"
@@ -167,7 +167,9 @@ export const GithubIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
       className="text-xl text-fore-subtle group-hover:-translate-y-2 transition-transform"
     >
-      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
     </svg>
   )
 }
@@ -207,6 +209,25 @@ export const EmailIcon = () => {
     >
       <path fill="none" d="M0 0h24v24H0z"></path>
       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10h5v-2h-5c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57V12c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 1.77 1.47 2.96 1.47 1.97 0 3.5-1.6 3.5-3.57V12c0-5.52-4.48-10-10-10zm0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
+    </svg>
+  )
+}
+
+export const PhoneIcon = () => {
+  return (
+    <svg
+      stroke="currentColor"
+      fill="none"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      height="1em"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+      className="text-xl text-fore-subtle group-hover:-translate-y-2 transition-transform"
+    >
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.11 5.18 2 2 0 0 1 5.11 3h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .65 2.57 2 2 0 0 1-.45 2.11L9.1 10.9a16 16 0 0 0 6 6l1.5-1.22a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.57.65A2 2 0 0 1 22 16.92z"/>
     </svg>
   )
 }

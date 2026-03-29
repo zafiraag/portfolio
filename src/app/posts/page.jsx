@@ -70,7 +70,7 @@ const PostsPage = async () => {
   return (
     <>
       <h1 className="text-2xl md:text-3xl text-fore-primary font-bold">
-        Posts
+        Certificates
       </h1>
       <FilteredPosts
         posts={allPosts}

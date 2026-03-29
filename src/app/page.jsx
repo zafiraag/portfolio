@@ -1,4 +1,4 @@
-import { getAllPosts, getPageBySlug } from '@/lib/cosmic'
+import { getAllPosts, getPageBySlug, getAllWorks } from '@/lib/cosmic'
 import IntroSection from '@/sections/IntroSection'
 import AboutMeSection from '@/sections/AboutMeSection'
 import ToolboxSection from '@/sections/ToolboxSection'
@@ -12,7 +12,7 @@ async function getData() {
   const { isEnabled } = draftMode()
   const [allPosts, allWorks, pageData] = await Promise.all([
     getAllPosts(isEnabled, 'posts', 3) || [],
-    getAllPosts(isEnabled, 'works', 3) || [],
+    getAllWorks(isEnabled, 'works', 3) || [],
     getPageBySlug('home-page', 'metadata'),
   ])
   return {
