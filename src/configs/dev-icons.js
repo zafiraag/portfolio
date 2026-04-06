@@ -1,7 +1,6 @@
 export const devIcons = [
   { iconName: 'devicon-html5-plain', name: 'HTML' },
   { iconName: 'devicon-css3-plain', name: 'CSS' },
-  { iconName: 'devicon-javascript-plain', name: 'JavaScript' },
   { iconName: 'devicon-figma-plain', name: 'Figma' },
   { iconName: 'devicon-canva-plain', name: 'Canva' },
   { iconName: 'devicon-windows8-plain', name: 'PowerPoint' },
